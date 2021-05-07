@@ -40,10 +40,14 @@ public class AuthManager implements AuthService{
 
 	@Override
 	public void login(String email, String password) {
-		if(this.userService.getByEmail(email).getEmail().equals(email) && this.userService.getByEmail(email).getPassword().equals(password)) {
-			System.out.println("Login successful");
+		if(this.userService.getByEmail(email) != null) {
+			if(this.userService.getByEmail(email).getEmail().equals(email) && this.userService.getByEmail(email).getPassword().equals(password)) {
+				System.out.println("Login successful");
+			}else {
+				System.out.println("Your e-mail address or password is incorrect");
+			}
 		}else {
-			System.out.println("Your e-mail address or password is incorrect");
+			System.out.println("This user is not registered.");
 		}
 	}
 
