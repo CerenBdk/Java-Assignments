@@ -1,4 +1,4 @@
-package day5Assignment1.gmail;
+package day5Assignment1.google;
 
 import java.util.ArrayList;
 import java.util.List;

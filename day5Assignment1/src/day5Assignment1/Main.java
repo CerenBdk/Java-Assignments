@@ -8,7 +8,7 @@ import day5Assignment1.business.concretes.UserManager;
 import day5Assignment1.core.concretes.GoogleManagerAdapter;
 import day5Assignment1.core.concretes.VerificationLink;
 import day5Assignment1.dataAccess.concretes.InMemoryUserDao;
-import day5Assignment1.gmail.GoogleManager;
+import day5Assignment1.google.GoogleManager;
 
 public class Main {
 

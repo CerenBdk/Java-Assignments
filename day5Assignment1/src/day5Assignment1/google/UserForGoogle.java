@@ -1,4 +1,4 @@
-package day5Assignment1.gmail;
+package day5Assignment1.google;
 
 public class UserForGoogle {
 	private int id;
